@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>poker</title>
+</head>
+<body>
+<table>
+    <tr>
+        　<th>9</th><th>10</th><th>J</th><th>Q</th><th>K</th><th>A</th>
+    </tr>
+            <input type="button" value="ボタン" onclick= "axios.get('http://localhost:8080/throwDice')">
+   </table>
+<!--<script src="http://localhost:8080/Poker.html"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+axios.get('http://localhost:8080/throwDice')
+  .then(res => console.log(res.data))
+</script>
+</body>
+</html>
